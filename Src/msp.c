@@ -22,7 +22,7 @@ void HAL_MspInit(void){
 	HAL_NVIC_SetPriority(UsageFault_IRQn, 0, 0);
 }
 
-void HAL_TIM_OC_MspInit(TIM_HandleTypeDef *htim){
+void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim){
 
 	GPIO_InitTypeDef tim3OC_ch_gpio;
 	//!. Enable the peripheral clock for the timer 3 and GPIOB
